@@ -6,8 +6,8 @@ Here we publicly distribute the latest SMT and NMT models that we have developed
 
 ## NMT
 
-We are working on word2word and chr2chr neural MT approaches. You can find the model files, translation quality estimations and references to used software in the **nmt** folder.
+We are working on word2word and chr2chr neural MT approaches. You can find the model files, translation quality estimations and references to used software in the [nmt](http://github.com/fishel/kama/tree/master/nmt) folder.
 
 ## SMT
 
-Our previous baseline was phrase-based SMT, and included a number of improvements on top of the baseline approach. In the **smt** folder you will find the models, analysis of translation quality and other info.
+Our previous baseline was phrase-based SMT, and included a number of improvements on top of the baseline approach. In the [smt](http://github.com/fishel/kama/tree/master/smt) folder you will find the models, analysis of translation quality and other info.
