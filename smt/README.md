@@ -6,15 +6,17 @@ Here you can find information on the Estonian-English and English-Estonian stati
 
 The models represented here are statistical phrase-based translation models. In parallel we are testing the various neural MT approaches, but for now the most usable baseline in terms of industrial collaborations is statistical.
 
-We are using [Moses](http://statmt.org/moses). Six different corpora are used for training
+We are using [Moses](http://statmt.org/moses). Six different corpora are used for training: [Europarl](http://statmt.org/europarl) (17.1/12.8 mln En/Et tokens), [OpenSubtitles](http://opus.lingfil.uu.se/OpenSubtitles2016.php) (83.6/67.6 mln En/Et tokens), [EU Journal](https://ec.europa.eu/jrc/en/language-technologies) (58.6/43.7 mln En/Et tokens), [EU Bookshop](http://opus.lingfil.uu.se/EUbookshop.php) (10.2/7.7 mln En/Et tokens), [EMEA](http://opus.lingfil.uu.se/EMEA.php) (11.1/9.7 mln En/Et tokens) and [ECB](http://opus.lingfil.uu.se/ECB.php) (2.9/2.1 mln En/Et tokens). We use the [perplexity minimization](http://www.aclweb.org/anthology/E12-1055.pdf) approach to combine translation and language models based on different corpora.
 
-[Data, sizes, TMCombine/interpolate-lm]
+We test the ready models on four different test corpora: Europarl, OpenSubs, [TempEst](http://statmt.ut.ee/) and [ACCURAT balanced test corpus](http://metashare.elda.org/repository/browse/accurat-balanced-test-corpus-for-under-resourced-languages/09cf87927ef211e5aa3b001dd8b71c662b9642e71de848dd9e5c92c0ee97dd1d/).
 
 ## Estonian-English Results
 
-* BLEU: 32.4 ± 0.3
-* METEOR 35.8 ± 0.1
-* TER 51.3 ± 0.3
+|      | Europarl | OpenSubs | TempEst | ACCURAT |
+|---   |---|---|---|---|
+|BLEU  | 32.6 ± 0.3 | 25.3 ± 0.5 | 21.7 ± 0.6 | 28.0 ± 1.2 |
+|METEOR| 35.9 ± 0.1 | 27.7 ± 0.3 | 28.6 ± 0.3 | 31.0 ± 0.5 |
+|TER   | 51.1 ± 0.3 | 56.1 ± 0.6 | 58.3 ± 0.6 | 56.7 ± 1.0 |
 
 Largely the translation output conveys the meaning correctly, but lacks in fluency. This ranges from understandable phrases connected with wrong functional words to word salad translations. Some sentences, especially short ones, get near-perfect translations. Once in a while an important word is missing, but overall coverage of the input text is ok.
 
@@ -43,9 +45,14 @@ Largely the translation output conveys the meaning correctly, but lacks in fluen
 
 ## English-Estonian Results
 
-* BLEU: 19.3 ± 0.3
-* 23.2 ± 0.2
-* 60.3 ± 0.3
+* 
+* 
+* 
+|      | Europarl | OpenSubs | TempEst | ACCURAT |
+|---   |---|---|---|---|
+|BLEU  | 19.6 ± 0.3 | 22.0 ± 0.6 | 16.6 ± 0.6 | 17.0 ± 1.0 |
+|METEOR| 23.3 ± 0.2 | 23.4 ± 0.3 | 23.1 ± 0.3 | 20.8 ± 0.5 |
+|TER   | 61.0 ± 0.3 | 59.9 ± 0.6 | 67.8 ± 0.8 | 67.1 ± 1.0 |
 
 Again, the meaning of the translation in most cases coincides with the meaning of the input sentence. Due to richer morphology of Estonian, the fluency problems are much more evident. The output is mostly a direct translation of the input, with practically no reordering. This affects long-distance reordering (like "between A, B and C" - "A, B ja C vahel"), which mostly fails to get translated correctly.
 
