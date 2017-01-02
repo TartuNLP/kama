@@ -45,9 +45,6 @@ Largely the translation output conveys the meaning correctly, but lacks in fluen
 
 ## English-Estonian Results
 
-* 
-* 
-* 
 |      | Europarl | OpenSubs | TempEst | ACCURAT |
 |---   |---|---|---|---|
 |BLEU  | 19.6 ± 0.3 | 22.0 ± 0.6 | 16.6 ± 0.6 | 17.0 ± 1.0 |
