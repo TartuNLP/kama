@@ -53,16 +53,24 @@ NMT handles the generation of Estonian much better than SMT, with the output bei
 
 |    |     |
 | ------------ | ---------- |
-|**Source:**|:               as many of you know , John Bowis was taken ill recently in Brussels and was hospitalised .
-|**Reference:**|:            nagu paljud teist teavad , jäi John Bowis hiljuti Brüsselis haigeks ja ta viidi haiglasse .
-|**Hypothesis (SMT):**|:     nagu paljud teist teavad , John Bowis haigestus hiljuti Brüsselis ja vajas haiglaravi .
-|**Hypothesis (NMT):**|:     nagu paljud teist teavad , kasutati John Bowist eile Brüsselis haigestuda ja see oli ravitav .
+|**Source:**|               as many of you know , John Bowis was taken ill recently in Brussels and was hospitalised . | 
+|**Reference:**|            nagu paljud teist teavad , jäi John Bowis hiljuti Brüsselis haigeks ja ta viidi haiglasse . |
+|**Hypothesis (SMT):**|     nagu paljud teist teavad , John Bowis haigestus hiljuti Brüsselis ja vajas haiglaravi . | 
+|**Hypothesis (NMT):**|     nagu paljud teist teavad , kasutati John Bowist eile Brüsselis haigestuda ja see oli ravitav .|
 **Analysis:** SMT good, NMT wrong and ungrammatical -- a rare example
 
 |    |     |
 | ------------ | ---------- |
-|**Source:**|:               the European Union should call for a renewal of the work of both houses of parliament , which have been suspended by the new regime .
-|**Reference:**|:            Euroopa Liit peaks taotlema parlamendi mõlema koja töö taastamist , mille uus valitsus peatas .
-|**Hypothesis (SMT):**|:     Euroopa Liit peaks nõuavad uut tööd parlamendi mõlemad kojad , mis on peatanud uus režiim .
-|**Hypothesis (NMT):**|:     Euroopa Liit peaks nõudma , et Euroopa Parlamendi mõlema maja töö pikendaks , ja see on uue režiimi poolt peatatud .
+|**Source:**|               the European Union should call for a renewal of the work of both houses of parliament , which have been suspended by the new regime . |
+|**Reference:**|            Euroopa Liit peaks taotlema parlamendi mõlema koja töö taastamist , mille uus valitsus peatas . |
+|**Hypothesis (SMT):**|     Euroopa Liit peaks nõuavad uut tööd parlamendi mõlemad kojad , mis on peatanud uus režiim . |
+|**Hypothesis (NMT):**|     Euroopa Liit peaks nõudma , et Euroopa Parlamendi mõlema maja töö pikendaks , ja see on uue režiimi poolt peatatud .|
 **Analysis:** "maja" should be "koja", the last clause after comma sounds a bit unnatural, but the translation is very well post-editable. SMT translation output is quite broken -- a much more typical example.
+
+|    |     |
+| ------------ | ---------- |
+|**Source:**|               in writing . - ( IT ) Madam President , ladies and gentlemen , I voted in favour of Mr Gyürk 's report on follow-up of the energy efficiency national action plans .|
+|**Reference:**|            kirjalikult . - ( IT ) Austatud juhataja , daamid ja härrad . mina hääletasin härra Gyürki riiklikke energiasäästu tegevuskavasid järelkajastava raporti poolt .|
+|**Hypothesis (SMT):**|     kirjalikult . - ( IT ) Proua juhataja , daamid ja härrad , ma hääletasin härra Gyürki raport järelmeetmete kohta riiklike energiatõhususe tegevuskavade .|
+|**Hypothesis (NMT):**|     kirjalikult . - ( IT ) Austatud juhataja ! head kolleegid !|
+**Analysis:** huge chunk missing from the NMT output.
