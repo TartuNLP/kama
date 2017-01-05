@@ -33,7 +33,7 @@ The translations are either perfectly fluent (3 out of 4 translations), or inclu
 |**Hypothesis (NMT):** |                 in writing . - ( IT ) Madam President , ladies and gentlemen , I voted in favour of Mr Beaupuy 's report on the national energy saving action plans .|
 |**Hypothesis (SMT):** |                 in writing . - ( IT ) Mr President , ladies and gentlemen . I voted against Mr Gyürk 's national energy efficiency action plans järelkajastava in favour of the report .|
 |**Reference:** |                 in writing . - ( IT ) Madam President , ladies and gentlemen , I voted in favour of Mr Gyürk 's report on follow-up of the energy efficiency national action plans .|
-**Analysis:** good translation with perfect fluency, but minor adequacy problems: guessing the "Madam" President from the genderless Estonian input wrongly, the name "Gyürk" is translated as "Beaupuy" (segmented with BPE as ``Gy-ür-ki``; only present in the training set 3 times in the genitive form). Impressive, that "hääletasin ... poolt" is correctly translated by NMT as "voted in favor of", unlike SMT's erroneous guess "voted against".
+**Analysis:** good translation with perfect fluency, but minor adequacy problems: guessing the "Madam" President from the genderless Estonian input wrongly, the name "Gyürk" is translated as "Beaupuy" (segmented as ``Gy-ür-ki`` by BPE; only present in the training set 3 times in the genitive form). Impressive, that "hääletasin ... poolt" is correctly translated by NMT as "voted in favor of", unlike SMT's erroneous guess "voted against".
 
 ## English-Estonian Results
 
@@ -43,19 +43,24 @@ The translations are either perfectly fluent (3 out of 4 translations), or inclu
 
 NMT handles the generation of Estonian much better than SMT, with the output being mostly fluent, including morphological agreement and complex word order. The same problems are seen as with the opposite translation direction: missing or superfluous tokens (including repeated). Overall the quality seems to be lower than in the opposite direction, which is corroborated by the metrics. Examples:
 
+|    |     |
+| ------------ | ---------- |
 |**Source:**|               the new protocol now put to us by the Commission represents very rigorous cuts compared with the old one .
 |**Hypothesis (NMT):**|     uus protokoll , mida komisjon nüüd meile esitab , kujutab endast väga rangeid kärpeid võrreldes vana korraga .
 |**Hypothesis (SMT):**|     uus protokoll nüüd meile esitanud komisjoni poolt on väga range kärpeid võrreldes vana .
 |**Reference:**|            uus protokoll , mille komisjon meile nüüd esitab , sisaldab vanaga võrreldes väga karme piiranguid .
 **Analysis:** perfect fluency, agreement; "korraga" not precisely correct
 
-
+|    |     |
+| ------------ | ---------- |
 |**Source:**|:               as many of you know , John Bowis was taken ill recently in Brussels and was hospitalised .
 |**Reference:**|:            nagu paljud teist teavad , jäi John Bowis hiljuti Brüsselis haigeks ja ta viidi haiglasse .
 |**Hypothesis (SMT):**|:     nagu paljud teist teavad , John Bowis haigestus hiljuti Brüsselis ja vajas haiglaravi .
 |**Hypothesis (NMT):**|:     nagu paljud teist teavad , kasutati John Bowist eile Brüsselis haigestuda ja see oli ravitav .
 **Analysis:** SMT good, NMT wrong and ungrammatical -- a rare example
 
+|    |     |
+| ------------ | ---------- |
 |**Source:**|:               the European Union should call for a renewal of the work of both houses of parliament , which have been suspended by the new regime .
 |**Reference:**|:            Euroopa Liit peaks taotlema parlamendi mõlema koja töö taastamist , mille uus valitsus peatas .
 |**Hypothesis (SMT):**|:     Euroopa Liit peaks nõuavad uut tööd parlamendi mõlemad kojad , mis on peatanud uus režiim .
