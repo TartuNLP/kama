@@ -22,14 +22,19 @@ The translations are either perfectly fluent (3 out of 4 translations), or inclu
 | ------------ | ---------- |
 |**Source:** |                 eriti tervitan ma , hr Barroso , teist põhimõtet : õiglus ja liikmesriikide erinevate lähtekohtade ja investeerimisvõimaluste tunnistamine . |
 |**Hypothesis (NMT):** |                  I particularly welcome , Mr Barroso , your principle : fairness and the recognition of different starting points and investment opportunities for Member States . |
-|**Hypothesis (SMT)**:                 I particularly welcome , Mr Barroso , the second principle : justice and of the Member States of the different points of departure and the recognition of investment opportunities . |
-|**Reference:** |                 in particular , Mr Barroso , I welcome the second principle : fairness and recognising Member States &apos; different starting points and different capacities to invest . |
+|**Hypothesis (SMT)**: |                  I particularly welcome , Mr Barroso , the second principle : justice and of the Member States of the different points of departure and the recognition of investment opportunities . |
+|**Reference:** |                 in particular , Mr Barroso , I welcome the second principle : fairness and recognising Member States' different starting points and different capacities to invest . |
+**Analysis:** perfect translation by NMT, including a long-distance reordering ("liikmesriikide X ja Y" - "X and Y for Member States")
 
 
-``Source``: ``nagu ma ütlesin , olles kokku leppinud ühisstrateegias , kindlas tegevuskavas ning konkreetsetes jätkumehhanismides , arutanud selliseid tähtsaid ja päevakajalisi küsimusi nagu kliimamuutused , integratsioon , energia ja sisseränne , kujutab tippkohtumine selgelt sammu edasi , meie Aafrikaga suhte küpsemist .``
-``Hypothesis (NMT)``: ``as I said , having agreed on the joint strategy , on the Commission &apos;s common agenda , and on particular follow-up mechanisms , we discussed such important and topical issues such as climate change , integration , energy and immigration , the summit will be clearly a step forward , a mature one of our relations with Africa .``
-``Hypothesis (SMT)``: ``as I said , having agreed on a joint strategy , a specific action plan , and the specific jätkumehhanismides discussed , such important and topical issues such as climate change , energy and immigration , integration , clearly the Summit represents a step forward in our relationship with Africa maturation .``
-``Reference``: ``as I have said , by agreeing a joint strategy , a specific action plan and concrete follow-up mechanisms , by discussing such important and current issues as climate change , integration , energy and immigration , the summit clearly represents a step forward , a maturing of our relationship with Africa . we waited seven years to get from Cairo to Lisbon .``
+|    |     |
+| ------------ | ---------- |
+|**Source:** |                 kirjalikult . - ( IT ) Austatud juhataja , daamid ja härrad . mina hääletasin härra Gyürki riiklikke energiasäästu tegevuskavasid järelkajastava raporti poolt .|
+|**Hypothesis (NMT):** |                 in writing . - ( IT ) Madam President , ladies and gentlemen , I voted in favour of Mr Beaupuy 's report on the national energy saving action plans .|
+|**Hypothesis (SMT):** |                 in writing . - ( IT ) Mr President , ladies and gentlemen . I voted against Mr Gyürk 's national energy efficiency action plans järelkajastava in favour of the report .|
+|**Reference:** |                 in writing . - ( IT ) Madam President , ladies and gentlemen , I voted in favour of Mr Gyürk 's report on follow-up of the energy efficiency national action plans .|
+**Analysis:** good translation with minor problems: guessing the "Madam" President from the genderless Estonian input wrongly, the name "Gyürk" is translated as "Beaupuy" (segmented with BPE as ``Gy@@ ür@@ ki``). Impressive, that "hääletasin ... poolt" is correctly translated by NMT as "voted in favor of", unlike SMT's erroneous guess "voted against".
+
 
 
 ## English-Estonian Results
