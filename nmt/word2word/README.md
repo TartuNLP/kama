@@ -16,14 +16,24 @@ The training time was about a week in most cases on a GTX 960 GPU.
 * METEOR: 36.0 ± 0.2
 * TER: 49.3 ± 0.4
 
-The translations are either perfectly fluent (3 out of 4 translations), or include single errors/places that do not sound naturally. Long-distance dependencies modelled well (357, 952). The main problem is coverage: some times part of the input is skipped, and sometimes part of the translation output is unrelated to the input (1 in 4 translations). Small errors like wrong words are also present; this particularly affects names (like ``härra Gyürki'' translated as ``Mr Beaupuy'').
+The translations are either perfectly fluent (3 out of 4 translations), or include single errors/places that do not sound naturally. Long-distance dependencies modelled well. The main problem is coverage: some times part of the input is skipped, and sometimes part of the translation output is unrelated to the input (1 in 4 translations). Small errors like wrong words are also present; this particularly affects names (like "härra Gyürki" translated as "Mr Beaupuy").
 
-[examples]
+|    |     |
+| ------------ | ---------- |
+|**Source:** |                 eriti tervitan ma , hr Barroso , teist põhimõtet : õiglus ja liikmesriikide erinevate lähtekohtade ja investeerimisvõimaluste tunnistamine . |
+|**Hypothesis (NMT):** |                  I particularly welcome , Mr Barroso , your principle : fairness and the recognition of different starting points and investment opportunities for Member States . |
+|**Hypothesis (SMT)**:                 I particularly welcome , Mr Barroso , the second principle : justice and of the Member States of the different points of departure and the recognition of investment opportunities . |
+|**Reference:** |                 in particular , Mr Barroso , I welcome the second principle : fairness and recognising Member States &apos; different starting points and different capacities to invest . |
+
+
+``Source``: ``nagu ma ütlesin , olles kokku leppinud ühisstrateegias , kindlas tegevuskavas ning konkreetsetes jätkumehhanismides , arutanud selliseid tähtsaid ja päevakajalisi küsimusi nagu kliimamuutused , integratsioon , energia ja sisseränne , kujutab tippkohtumine selgelt sammu edasi , meie Aafrikaga suhte küpsemist .``
+``Hypothesis (NMT)``: ``as I said , having agreed on the joint strategy , on the Commission &apos;s common agenda , and on particular follow-up mechanisms , we discussed such important and topical issues such as climate change , integration , energy and immigration , the summit will be clearly a step forward , a mature one of our relations with Africa .``
+``Hypothesis (SMT)``: ``as I said , having agreed on a joint strategy , a specific action plan , and the specific jätkumehhanismides discussed , such important and topical issues such as climate change , energy and immigration , integration , clearly the Summit represents a step forward in our relationship with Africa maturation .``
+``Reference``: ``as I have said , by agreeing a joint strategy , a specific action plan and concrete follow-up mechanisms , by discussing such important and current issues as climate change , integration , energy and immigration , the summit clearly represents a step forward , a maturing of our relationship with Africa . we waited seven years to get from Cairo to Lisbon .``
+
 
 ## English-Estonian Results
 
 * BLEU: 23.1 ± 0.3
 * METEOR: 25.1 ± 0.2
 * TER: 60.4 ± 0.5
-
-[Error analysis, examples]

@@ -27,7 +27,7 @@ Largely the translation output conveys the meaning correctly, but lacks in fluen
 | **Source:**         |    tarbijakaitse roheline raamat ei tõstatanud küll kõiki neid küsimusi , kuid neid käsitletakse selles raportis . |
 | **Hypothesis:**     |    the Green Paper on consumer protection not raised right all these issues , but they are covered in this report . |
 | **Reference:**      |    not all these matters were raised in the Green paper on consumer protection but they are in this report . |
-**Analysis:** fluency limping, word order closely follows the input.
+**Analysis:** word order closely follows the input, fluency not perfect, but a nicely post-editable translation
 
 |    |     |
 | ------------ | ---------- |
@@ -35,13 +35,6 @@ Largely the translation output conveys the meaning correctly, but lacks in fluen
 | **Hypothesis:**     |    as I said , having agreed on a joint strategy , a specific action plan , and the specific jätkumehhanismides discussed , such important and topical issues such as climate change , energy and immigration , integration , clearly the Summit represents a step forward in our relationship with Africa maturation . |
 | **Reference:**      |    as I have said , by agreeing a joint strategy , a specific action plan and concrete follow-up mechanisms , by discussing such important and current issues as climate change , integration , energy and immigration , the summit clearly represents a step forward , a maturing of our relationship with Africa . |
 **Analysis:** fluency heavily limping, repetition (such ... such), an OOV compound
-
-|    |    |
-| ----- | ----- |
-| **Source:** |              seda gaasi leidub suures koguses Prantsusmaal , Poolas ja Bulgaarias . |
-| **Hypothesis:** |        this gas there are large quantities of France , Poland and Bulgaria . |
-| **Reference:** |           large amounts of this gas are found in France , Poland and Bulgaria . |
-**Analysis:** fluency again, this time the errors changing the meaning
 
 ## English-Estonian Results
 
