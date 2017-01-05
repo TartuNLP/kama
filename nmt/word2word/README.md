@@ -24,7 +24,7 @@ The translations are either perfectly fluent (3 out of 4 translations), or inclu
 |**Hypothesis (NMT):** |                  I particularly welcome , Mr Barroso , your principle : fairness and the recognition of different starting points and investment opportunities for Member States . |
 |**Hypothesis (SMT)**: |                  I particularly welcome , Mr Barroso , the second principle : justice and of the Member States of the different points of departure and the recognition of investment opportunities . |
 |**Reference:** |                 in particular , Mr Barroso , I welcome the second principle : fairness and recognising Member States' different starting points and different capacities to invest . |
-**Analysis:** perfect translation by NMT, including a long-distance reordering ("liikmesriikide X ja Y" - "X and Y for Member States")
+**Analysis:** near-perfect translation by NMT, perfect fluency, including a long-distance reordering ("liikmesriikide X ja Y" - "X and Y for Member States"). One mistake: "teist" wrongly translated as "your" (should have been "second")
 
 
 |    |     |
@@ -33,9 +33,7 @@ The translations are either perfectly fluent (3 out of 4 translations), or inclu
 |**Hypothesis (NMT):** |                 in writing . - ( IT ) Madam President , ladies and gentlemen , I voted in favour of Mr Beaupuy 's report on the national energy saving action plans .|
 |**Hypothesis (SMT):** |                 in writing . - ( IT ) Mr President , ladies and gentlemen . I voted against Mr Gyürk 's national energy efficiency action plans järelkajastava in favour of the report .|
 |**Reference:** |                 in writing . - ( IT ) Madam President , ladies and gentlemen , I voted in favour of Mr Gyürk 's report on follow-up of the energy efficiency national action plans .|
-**Analysis:** good translation with minor problems: guessing the "Madam" President from the genderless Estonian input wrongly, the name "Gyürk" is translated as "Beaupuy" (segmented with BPE as ``Gy@@ ür@@ ki``). Impressive, that "hääletasin ... poolt" is correctly translated by NMT as "voted in favor of", unlike SMT's erroneous guess "voted against".
-
-
+**Analysis:** good translation with perfect fluency, but minor adequacy problems: guessing the "Madam" President from the genderless Estonian input wrongly, the name "Gyürk" is translated as "Beaupuy" (segmented with BPE as ``Gy@@ ür@@ ki``; only present in the training set 3 times in the genitive form). Impressive, that "hääletasin ... poolt" is correctly translated by NMT as "voted in favor of", unlike SMT's erroneous guess "voted against".
 
 ## English-Estonian Results
 
