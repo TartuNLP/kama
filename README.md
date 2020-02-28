@@ -1,13 +1,33 @@
 # Kama
 
-Kama: Usable Estonian Machine Translation (kasutatav masintõlge) is a project (2015-2017) under the [National Programme for Estonian Language Technology](http://keeletehnoloogia.ee). Its focus is improving machine translation from/into Estonian and making sure that its output is usable in practice for specific text domains, for example for post-editing.
+This repository holds the scripts, models and descriptions for the output of research of neural machine translation at TartuNLP. A live demo of the latest models is available at [translate.ut.ee](https://translate.ut.ee). Below you will find a brief description of the latest approach, links to trained MT models and source code for running the models as an MT server and an API service.
 
-Here we publicly distribute the latest SMT and NMT models that we have developed, as well as their analysis and test set translations.
+## Why "Kama"?
+Our first MT project was called "KaMa: **ka**sutatav eesti **ma**sintõlge" (Usable Estonian Machine Translation). [Kama](https://en.wikipedia.org/wiki/Kama_(food)) is also a national Estonian food item :-)
 
-## NMT
+# Description
 
-We are working on [word2word](https://arxiv.org/abs/1409.0473) and [chr2chr](https://arxiv.org/abs/1610.03017) neural MT approaches. You can find the model files, translation quality estimations and references to used software in the [nmt](http://github.com/fishel/kama/tree/master/nmt) folder.
+Our current approach is multilingual multi-domain neural machine translation. That means that a single NMT model translates between several languages and is also aware of the text domain of the texts it works with.
 
-## SMT
+More specifically, we use the [Transformer](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf) with the output language and text domain as additional input information. The approach is described in [this paper](https://www.aclweb.org/anthology/W19-5342.pdf).
 
-Our previous baseline was phrase-based SMT, and included a number of improvements on top of the baseline approach. In the [smt](http://github.com/fishel/kama/tree/master/smt) folder you will find the models, analysis of translation quality and other info.
+Besides multilingual translation, the approach exhibits interesting additional functionality, such as handling code-switching and monolingual zero-shot translation, that can be used for error correction and style adaptation.
+
+## Code switching
+
+## Error correction
+
+## Style adaptation
+
+# Software
+
+# Models
+
+# Projects
+
+The work has been part of several projects and collaborations. National projects:
+* KaMa: kasutatav eesti masintõlge (Usable Estonian Machine Translation), 2015--2017, funded by [NPELT](http://keeletehnoloogia.ee)
+* Neurotõlge: Adaptive, Multilingual and Reliable Machine Translation for Estonian, 2018--2020, funded by [NPELT](http://keeletehnoloogia.ee)
+
+Related projects:
+* [Bergamot](https://browser.mt/), Horizon 2020 Research and Innovation Action, grant agreement No 825303
