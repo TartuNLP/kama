@@ -11,17 +11,57 @@ Our current approach is multilingual multi-domain neural machine translation. Th
 
 More specifically, we use the [Transformer](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf) with the output language and text domain as additional input information. The approach is described in [this paper](https://www.aclweb.org/anthology/W19-5342.pdf).
 
-Besides multilingual translation, the approach exhibits interesting additional functionality, such as handling code-switching and monolingual zero-shot translation, that can be used for error correction and style adaptation.
+Besides multilingual translation, the approach exhibits interesting additional functionality, such as handling code-switching and monolingual zero-shot translation, that can be used for error correction and style adaptation. Some examples from our current 7-language model:
 
-## Code switching
+## Code switching examples
 
-## Error correction
+* Sie können kirjutada daudz gemischt языки, and see переведёт kõik into vienu keelde. -> You can write a lot of mixed languages, and it translates everything into one language.
+* Sie können kirjutada daudz gemischt языки, and see переведёт kõik into vienu keelde. -> Te võite kirjutada palju sega keeli, ja see tõlgib kõik ühte keelde.
+* Sie können kirjutada daudz gemischt языки, and see переведёт kõik into vienu keelde. -> Вы можете написать много смешанных языков, и это переводит все в одно язык.
 
-## Style adaptation
+## Error correction examples
+
+* Ich legen Buch an Regal neben Tisch. -> Ich lege das Buch an Regal neben dem Tisch.
+* Ma arvab et homme miski põnev näeb. -> Ma arvan, et homme näeb midagi põnevat.
+* Наш программа переводит текст с ошибок в правильную. -> Наша программа переводит текст с ошибками в правильный.
+
+English correction does not work all too well, with some rare examples:
+* I be large reader, I has big library. -> I am a big reader, I have a big library.
+
+## Style adaptation examples
+
+Cross-lingual:
+* That is freaky -> See on kohutav. (formal) / See on vastik. (informal)
+* That is freaky -> Это ужасно. (formal) / Это отвратительно. (informal)
+
+Monolingual:
+* Kes oled? -> Kes te olete? (formal)
+* Wer bist du? -> Wer sind Sie? (formal)
+* I will be remunerated. -> I'll be rewarded. (informal)
+
+# Models
+
+All our models are currently trained with [Sockeye](https://github.com/awslabs/sockeye) using [open parallel corpora](http://opus.nlpl.eu/), pre-processed with our [truecaser](https://github.com/tartunlp/truecaser) and Google's [SentencePiece](https://github.com/google/sentencepiece).
+
+Models with their language and domain combinations:
+
+* English-German-French, Europarl-OpenSubtitles-JRCAcquis
+  * [Sockeye version 1.18.56]()
+
+* English-Estonian-Latvian, Europarl-OpenSubtitles-JRCAcquis-EMEA
+  * [Sockeye version 1.18.56]()
+
+* English-Estonian-Latvian-Russian, Europarl-OpenSubtitles-JRCAcquis-EMEA-UNcorpus-DGTTM-ParaCrawl-NewsCommentary
+  * [Sockeye version 1.18.56]()
+
+* English-Estonian-Latvian-Lithuanian-Russian-German-Finnish, Europarl-OpenSubtitles-JRCAcquis-EMEA-DGTTM-ParaCrawl-NewsCommentary
+  * [Sockeye version 1.18.106]()
 
 # Software
 
-# Models
+NMT provider implementation: [Nazgul](https://github.com/TartuNLP/nazgul)
+
+NMT API server implementation: [Sauron](https://github.com/TartuNLP/sauron)
 
 # Projects
 
