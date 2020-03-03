@@ -45,17 +45,20 @@ All our models are currently trained with [Sockeye](https://github.com/awslabs/s
 
 Models with their language and domain combinations:
 
-* English-German-French, Europarl-OpenSubtitles-JRCAcquis
-  * [Sockeye version 1.18.56]()
+* English-German-French
+  * Domains/corpora: Europarl-OpenSubtitles-JRCAcquis
+  * Sockeye version 1.18.56
+* English-Estonian-Latvian
+  * Domains/corpora: Europarl-OpenSubtitles-JRCAcquis-EMEA
+  * Sockeye version 1.18.56
+* English-Estonian-Latvian-Russian
+  * Domains/corpora: Europarl-OpenSubtitles-JRCAcquis-EMEA-UNcorpus-DGTTM-ParaCrawl-NewsCommentary
+  * Sockeye version 1.18.56
+* English-Estonian-Latvian-Lithuanian-Russian-German-Finnish
+  * Domains/corpora: Europarl-OpenSubtitles-JRCAcquis-EMEA-DGTTM-ParaCrawl-NewsCommentary
+  * Sockeye version 1.18.106
 
-* English-Estonian-Latvian, Europarl-OpenSubtitles-JRCAcquis-EMEA
-  * [Sockeye version 1.18.56]()
-
-* English-Estonian-Latvian-Russian, Europarl-OpenSubtitles-JRCAcquis-EMEA-UNcorpus-DGTTM-ParaCrawl-NewsCommentary
-  * [Sockeye version 1.18.56]()
-
-* English-Estonian-Latvian-Lithuanian-Russian-German-Finnish, Europarl-OpenSubtitles-JRCAcquis-EMEA-DGTTM-ParaCrawl-NewsCommentary
-  * [Sockeye version 1.18.106]()
+[Models on owncloud.ut.ee](https://owncloud.ut.ee/owncloud/index.php/s/sq9FebWmBNe9JGZ)
 
 # Software
 
