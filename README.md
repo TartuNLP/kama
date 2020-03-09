@@ -2,7 +2,7 @@
 
 This repository holds the scripts, models and descriptions for the output of research of neural machine translation at TartuNLP. A live demo of the latest models is available at [translate.ut.ee](https://translate.ut.ee). Below you will find a brief description of the latest approach, links to trained MT models and source code for running the models as an MT server and an API service.
 
-## Why "Kama"?
+### Why "Kama"?
 Our first MT project was called "KaMa: **ka**sutatav eesti **ma**sintõlge" (Usable Estonian Machine Translation). [Kama](https://en.wikipedia.org/wiki/Kama_(food)) is also a national Estonian food item :-)
 
 # Description
@@ -65,6 +65,11 @@ Models with their language and domain combinations:
 NMT provider implementation: [Nazgul](https://github.com/TartuNLP/nazgul)
 
 NMT API server implementation: [Sauron](https://github.com/TartuNLP/sauron)
+
+**Integration with translation frameworks:**
+* [MemoQ](https://github.com/TartuNLP/MemoQ-Neurotolge-Plugin)
+* [SDL](https://github.com/TartuNLP/SDL-Neurotolge-Plugin)
+* [Memsource](https://github.com/TartuNLP/Memsource-Neurotolge-Integration)
 
 # Projects
 
